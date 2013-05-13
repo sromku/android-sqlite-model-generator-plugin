@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.sromku.generator.command.GenerateHandler"
+            id="com.sromku.generator.generate.command"
+            name="Generate SQLite Model">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer">
+         <command
+               commandId="com.sromku.generator.generate.command"
+               icon="res/itdmethod_pub.gif"
+               label="Generate SQLite Model">
+         </command>
+      </menuContribution>
+   </extension>
+
+</plugin>
