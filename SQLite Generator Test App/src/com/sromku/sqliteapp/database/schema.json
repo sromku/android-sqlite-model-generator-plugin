@@ -1,0 +1,45 @@
+{
+  "name": "SQL_PRIVATE_DB",
+  "tables": [
+    {
+      "name": "STUDENT",
+      "description": "Student details",
+      "columns": [
+        {
+          "name": "FIRST_NAME",
+          "columnType": "TEXT"
+        },
+        {
+          "name": "LAST_NAME",
+          "columnType": "TEXT"
+        },
+        {
+          "name": "AGE",
+          "columnType": "INTEGER"
+        }
+      ]
+    },
+    {
+      "name": "COURSE",
+      "description": "Course details",
+      "columns": [
+        {
+          "name": "NAME",
+          "columnType": "TEXT"
+        },
+        {
+          "name": "COURSE_NUMBER",
+          "columnType": "INTEGER"
+        },
+        {
+          "name": "DESCRIPTION",
+          "columnType": "TEXT"
+        },
+        {
+          "name": "POINTS",
+          "columnType": "INTEGER"
+        }
+      ]
+    }
+  ]
+}
