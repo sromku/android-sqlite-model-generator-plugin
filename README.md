@@ -1,13 +1,19 @@
 SQLite Model Generator
 =====================================
-Eclipse plugin - Generate SQLite model for Android based on JSON schema object
+Eclipse plugin - Generate SQLite model for Android based on JSON schema file
 
 ## Usage of the plugin
 #### 1. Install the plugin
-Update site: 
-[TBD]
+Update site: `http://romkuapps.com/Apps/SQLite/update`
+
 #### 2. Create JSON file that describes your sqlite schema.
-Example: 
+* Schema has `name` and tables
+* `table` has `name`, `description` and columns
+* `column` has `name` and `columnType`
+* `columnType` can be `TEXT` or `INTEGER` only
+
+**Example:** 
+Two tables: `STUDENT` and `COURSE`
 ``` json
 {
   "name": "SQL_PRIVATE_DB",
@@ -55,10 +61,12 @@ Example:
   ]
 }
 ```
-#### 3. Right click on the file -> 'Generate ...'
-[TBD - image]
+#### 3. Right click on the file -> 'Generate SQLite Model...' ![Screenshot](http://romkuapps.com/Apps/Refs/right_click.png)
+![Screenshot](http://romkuapps.com/Apps/Refs/project_right_click.png)
+
+
 #### 4. Refresh the project
-[TBD - image]
+![Screenshot](http://romkuapps.com/Apps/Refs/project_after.png)
 
 ## Generated Code
 
